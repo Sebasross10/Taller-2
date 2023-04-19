@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Registro de Usuarios</h1>
+    <form id="registration-form">
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+        <input type="submit" value="Registrarse">
+    </form>
+    <button id="listar-btn">Listar Usuarios</button>
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody id="user-table-body">
+            <!-- Aquí se cargarán los usuarios registrados -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
